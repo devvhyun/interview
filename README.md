@@ -1,4 +1,306 @@
 # 인터뷰
+<details>
+<summary>객체지향이란?</summary>
+<br>
+<div markdown="1">
+
+객체지향이란 현실 세계를 프로그래밍으로 옮겨와 현실의 사물이나 개념에서 필요한 정보를 추출하여 상태와 행위를 가진 객체를 만들고, 객체들 간의 상호작용을 통해 로직을 구성하는 프로그래밍 방법입니다.
+</div>
+</details>
+
+<details>
+<summary>객체지향의 특징</summary>
+<br>
+<div markown="1">
+
+객체지향의 대표적인 특징으로는 캡슐화, 추상화, 상속, 다형성이 있습니다.  
+캡슐화는 코드의 재사용과 정보 은닉을 위한 특징으로 속성과 기능들을 클래스라는 캡슐에 넣는 것이라고 볼 수 있습니다. 이후에는 접근제어자를 통해 외부에서의 접근을 통제합니다.  
+추상화는 객체의 공통된 속성들 중 필요한 부분을 하나의 집합으로 만들어 내는 것입니다. 현실의 객체들은 매우 복잡하기 때문에 추상화를 통해 복잡도를 낮추고 필요한 속성들만 추출합니다.  
+상속은 자식 클래스가 부모 클래스의 속성과 기능을 물려 받는 것입니다.  
+다형성은 한 타입의 참조 변수로 여러 타입의 객체를 참조할 수 있도록 하는 것입니다. 부모 클래스 타입의 참조 변수로 자식 클래스의 인스턴스를 참조할 수 있는 것입니다. 오버로딩과 오버라이딩을 통해 구현할 수 있습니다.
+</div>
+</details>
+
+<details>
+<summary>객체지향 설계 원칙</summary>
+<br>
+<div markdown="1">
+	
+객체지향 설계 원칙에는 5가지 대표적인 원칙이 있습니다.  
+단일책임원칙(SRP) : 객체는 단 하나의 책임만 가져야 한다. -> 응집도는 높게, 결합도는 낮게  
+개방폐쇄원칙(OCP) : 확장에는 열려있고, 변경에는 닫혀 있어야 한다. -> 기존의 코드는 수정이 일어나지 말아야 하며, 쉽게 확장이 가능해야 한다.  
+리스코프치환원칙(LSP) : 부모 클래스의 인스턴스 대신 자식 클래스의 인스턴스를 사용해도 프로그램은 정상 작동해야 한다.  
+인터페이스분리원칙(ISP) : 사용하지 않는 인터페이스에 대해 영향을 받지 않아야 한다. -> 각각의 기능들은 독립된 인터페이스로 구현하며, 서로 영향을 주지 않도록 설계해야 한다.  
+의존역전원칙(DIP) : 변화하기 쉬운 것보다 어려운 것에 의존해야 한다. -> 변화가 쉬운 것은 구체화된 클래스, 어려운 것은 인터페이스나 추상 클래스를 의미한다.   
+</div>
+</details>
+
+<details>
+<summary>객체지향 장점</summary>
+<br>
+<div markdown="1">
+
+코드의 재사용성이 높습니다. 객체를 부품처럼 바꿔 사용할 수 있기 때문입니다. 또 객체 단위로 나눠 개발을 한 뒤에 나중에 객체들간의 관계만 설정 해주면 되기 때문에 대규모 프로젝트에 적합합니다. 그리고 절차지향에 비해 코드 수정이 편리하기 때문에 유지보수가 용이합니다.
+</div>
+</details>
+
+<details>
+<summary>객체지향 단점</summary>
+<br>
+<div markdown="1">
+
+절차지향보다 속도면에서 좀 더 느리고 설계 단계에서 많은 시간이 들게 되는 것입니다.
+</div>
+</details>
+
+<details>
+<summary>클래스란?</summary>
+<br>
+<div markdown="1">
+
+추상화를 거쳐 공통적인 속성과 행위를 변수와 메소드로 정의한 것 입니다. 객체를 만들기 위한 틀이라고 볼 수 있습니다.
+</div>
+</details>
+
+<details>
+<summary>인스턴스란?</summary>
+<br>
+<div markdown="1">
+
+클래스에서 정의한 것을 토대로 실제 메모리에 할당된 것입니다. 
+</div>
+</details>
+
+<details>
+<summary>자바의 특징</summary>
+<br>
+<div markdown="1">
+
+자바는 대표적인 객체지향 언어이며 JVM 위에서 실행하기 때문에 운영체제에 독립적입니다. 또 GC를 통해 자동으로 메모리 관리가 됩니다. 그리고 운영체제 지원 없이 멀티 쓰레드를 자체적으로 지원합니다. 또 동적 로딩을 지원합니다. 
+</div>
+</details>
+
+<details>
+<summary>운영체제 독립적이라는 말이 무슨 뜻인가요?</summary>
+<br>
+<div markdown="1">
+
+운영체제에 독립적이라는 것은 개발 환경과 배포 환경이 다를 경우 프로그램을 재컴파일 할 필요 없이 실행 가능함을 뜻합니다.
+</div>
+</details>
+
+<details>
+<summary>동적 로딩이란?</summary>
+<br>
+<div markdown="1">
+
+자바는 애플리케이션 실행 시 모든 객체가 생성되지 않고, 객체가 필요한 시점에 클래스를 동적 로딩하여 생성합니다. 이러한 동적 로딩은 일부 클래스 변경 시 전체를 다시 컴파일 하지 않아도 된다는 장점이 있지만 정적 로딩에 비해 속도가 느릴 수 있습니다. 이 부분에 대해서 자바는 static 키워드를 지원하여 보완합니다.
+</div>
+</details>
+
+<details>
+<summary>JVM이란?</summary>
+<br>
+<div markdown="1">
+
+JVM은 운영체제 위에서 동작하는 프로세스로 자바 바이트 코드를 해당 운영체제가 이해할 수 있는 기계어로 바꿔 실행하는 역할을 하는 자바 가상 머신입니다. 또한 Garbage Collection 을 수행하는 주체입니다. 자바는 JVM 으로 인해 운영체제에 종속되지 않고 메모리 관리 또한 자동으로 됩니다. 
+</div>
+</details>
+
+<details>
+<summary>JVM 동작 흐름</summary>
+<br>
+<div markdown="1">
+
+프로그램이 실행되면 JVM 은 운영체제로 부터 필요한 메모리를 할당 받습니다. JVM은 이 메모리를 용도에 따라 여러 영역으로 나누어 관리합니다.  
+자바 컴파일러가 자바 코드를 바이트코드로 변환시킵니다. 변환된 class 파일들을 클래스 로더를 통해 JVM 메모리 영역으로 로딩합니다.  
+로딩된 class 파일들은 실행 엔진을 통해 해석됩니다.  
+해석된 바이트 코드는 메모리 영역에 배치되어 실질적인 수행이 이루어집니다.
+</div>
+</details>
+
+<details>
+<summary>JVM 구성요소</summary>
+<br>
+<div markdown="1">
+
+Class Loader : JVM 내로 클래스를 로드하고 링크를 통해 배치하는 작업을 수행하는 모듈입니다.  
+Execution Engine : 런타임 데이터 영역에 배치된 바이트 코드를 실행시키는 역할을 합니다.  
+Garbage Collectior : Garbage Collection 을 수행합니다.  
+Runtime Data Areas : JVM이 운영체제에게서 할당 받은 메모리 영역입니다. 
+</div>
+</details>
+
+<details>
+<summary>자바의 메모리 영역은?</summary>
+<br>
+<div markdown="1">
+
+메소드 영역, 스택 영역, 힙 영역, 상수 풀 등이 있습니다. 
+</div>
+</details>
+
+<details>
+<summary>메소드 영역이란?</summary>
+<br>
+<div markdown="1">
+
+JVM 이 읽어들인 클래스와 인터페이스에 대한 런타임 상수 풀, 멤버 변수, 클래스 변수, 생성자와 메소드를 저장하는 영역입니다.
+</div>
+</details>
+
+<details>
+<summary>Runtime Constant Pool</summary>
+<br>
+<div markdown="1">
+
+JVM 은 런타인 상수 풀을 통해 해당 메소드나 필드의 실제 메모리 상 주소를 찾아 참조한다.
+</div>
+</details>
+
+<details>
+<summary>스택 영역</summary>
+<br>
+<div markdown="1">
+
+지역변수, 함수 등이 올라가는 LIFO 방식의 메모리 영역입니다. 기본 타입 변수는 스택 영역에 값을 저장하지만 참조 타입 변수는 주소를 저장합니다.
+</div>
+</details>
+
+<details>
+<summary>힙 영역</summary>
+<br>
+<div markdown="1">
+
+new 연산자를 통해 동적 할당된 객체들이 저장되는 메모리 영역입니다. GC에 의해 메모리가 관리 되는 영역이기도 합니다. 참조가 없는 객체는 의미 없는 객체로 판단되어 GC의 대상이 됩니다.
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+자바 소스를 자바 컴파일러를 통해 컴파일합니다. 컴파일 결과로 자바 바이트 코드 .class 파일이 생성됩니다. 해당 class 파일은 클래스 로더를 통해 JVM 런타임 데이터 영역에 저장됩니다. 그 다음 실행 엔진을 통해 명령어 단위로 실행됩니다.
+</div>
+</details>
+
+<details>
+<summary>컴파일 / 인터프리터 설명해주세요</summary>
+<br>
+<div markdown="1">
+
+컴파일러는 작성된 코드를 한 번에 기계어로 번역합니다. 최초 번역 이후에는 실행 파일이 생성되어 다음 실행에서는 속도가 빠릅니다. 반면에 인터프리터는 한 줄 단위로 번역을 하기 때문에 번역 속도는 컴파일러보다 빠르지만 실행 속도는 상대적으로 느립니다.  
+또한 컴파일러는 플랫폼에 종속적이지만, 인터프리터는 그렇지 않습니다.  
+</div>
+</details>
+
+<details>
+<summary>JIT 컴파일러란?</summary>
+<br>
+<div markdown="1">
+
+인터프리터 방식의 단점을 보완하기 위해 도입된 방식입니다. 실행 시점에 인터프리터 방식으로 번역하면서 해당 코드를 캐싱하여 동일한 부분이 호출되는 경우 캐싱해둔 코드를 불러다 사용하는 방식입니다. 중복되는 코드마저 매번 번역하는 인터프리터 방식의 단점을 보완하여 기존 인터프리터 방식보다 빠르게 동작합니다. 자바는 예전에는 인터프리터 방식을 사용하였지만 현재는 인터프리터 방식과 JIT 방식을 함께 사용한다고 알고 있습니다.
+</div>
+</details>
+
+<details>
+<summary>Call by Value / Call by Reference</summary>
+<br>
+<div markdown="1">
+
+Call by Value 는 인자의 값을 복사하여 처리하는 방식입니다. 메소드 내의 처리 결과는 메소드 밖의 변수에 영향을 주지 않습니다. 인자를 복사하여 사용하기 때문에 메모리 사용량이 증가합니다.  
+Call by Reference 는 인자의 주소를 참조하여 직접 값에 영향을 주는 방식입니다. 복사를 하지 않고 직접 참조하기 때문에 속도가 빠르고 메모리를 적게 사용하지만 원본이 변경될 수 있다는 위험이 있습니다.  
+자바는 항상 Call by Value 로 값을 넘깁니다. 레퍼런스 타입을 인자로 넘기는 경우에는 주소 값을 복사하여 사용합니다. 따라서 원본 객체의 프로퍼티에는 접근 가능하나 원본 객체 자체를 변경하는 것은 불가능합니다.
+</div>
+</details>
+
+<details>
+<summary>Primitive type / Reference type</summary>
+<br>
+<div markdown="1">
+
+기본형 타입은 선언과 동시에 초기화 되어야 합니다. 또한 비객체이기에 null 을 값으로 가질 수 없고 제네릭타입으로 쓰일 수 없습니다. 
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+<details>
+<summary>자바 컴파일</summary>
+<br>
+<div markdown="1">
+
+
+</div>
+</details>
+
+
+
+
+
+
 
 ## 자바의 특징
 #### 1. 객체지향 언어
