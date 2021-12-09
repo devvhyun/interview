@@ -1,6 +1,7 @@
 ## 자료구조
 <details>
   <summary>선형자료구조</summary>
+  <br>
   <div markdown="1">
     
   하나의 자료 뒤에 하나의 자료가 존재하는 것이다.  
@@ -10,6 +11,7 @@
 </details>
 <details>
   <summary>비선형자료구조</summary>
+  <br>
   <div markdown="1">
     
   하나의 자료 뒤에 여러개의 자료가 존재할 수 있는 것이다.  
@@ -19,6 +21,7 @@
 </details>
 <details>
   <summary>Array</summary>
+  <br>
   <div markdown="1">
   
   논리적 저장 순서와 물리적 저장 순서가 일치하는 자료구조이다.  
@@ -33,6 +36,7 @@
  </details>
 <details>
   <summary>ArrayList</summary>
+  <br>
   <div markdown="1">
   
   내부적으로는 배열로 구현되어 있는 선형자료구조이다.  
@@ -51,6 +55,7 @@
  </details>
 <details>
   <summary>Array vs ArrayList</summary>
+  <br>
   <div markdown="1">
   
   Array 와 ArrayList 모두 연속된 공간에 데이터를 저장하는 선형자료구조이다.  
@@ -69,6 +74,7 @@
  </details>
 <details>
   <summary>LinkedList</summary>
+  <br>
   <div markdown="1">
   
   요소들간의 연결을 통해 리스트를 구현한 선형자료구조이다.  
@@ -83,6 +89,7 @@
  </details>
 <details>
   <summary>Array vs LinkedList</summary>
+  <br>
   <div markdown="1">
   
   Array 는 임의 접근을 지원한다.  
@@ -103,6 +110,7 @@
  </details>
 <details>
   <summary>ArrayList vs LinkedList</summary>
+  <br>
   <div markdown="1">
   
   ArrayList 는 길이가 가변적이나 내부적으로는 배열로 구현되어 있기 때문에 길이 변경 시 배열의 복사가 이뤄진다.  
@@ -117,6 +125,7 @@
  </details>
  <details>
   <summary>Stack</summary>
+  <br>
   <div markdown="1">
     
   나중에 들어온 데이터가 먼저 나가는 **후입선출(LIFO)** 방식의 선형자료구조이다.  
@@ -128,6 +137,7 @@
 </details>
 <details>
   <summary>Queue</summary>
+  <br>
   <div markdown="1">
     
   먼저 들어온 데이터가 먼저 나가는 **선입선출(FIFO)** 방식의 선형자료구조이다.  
@@ -139,6 +149,7 @@
   
 <details>
   <summary>Tree</summary>
+  <br>
   <div markdown="1">
     
   계층적 관계를 표현하는 비선형자료구조이다.  
@@ -245,7 +256,122 @@
   1. 부모와 삼촌 노드를 블랙으로, 부모의 부모를 레드로 정한다.  
   2. 부모의 부모가 루트가 아닐 경우 Double Red 가 다시 발생할 수 있다.  
       
+  ---  
+      
+  **AVL Tree(균형잡힌트리)**  
+      
+  트리가 한쪽으로 치우쳐 자라나는 현상을 방지하여 트리 높이의 균형을 유지하는 이진탐색트리이다.  
+  높이를 O(logN) 으로 보장하여 탐색, 삽입, 삭제 연산을 O(logN) 으로 보장한다.  
+    
+  **AVL Tree vs RBT Tree**  
+      
+  두 트리 모두 탐색, 삽입, 삭제 연산을 O(logN) 을 보장한다.  
+  하지만 AVL Tree 는 트리의 균형을 좀 더 엄격히 유지하기 때문에 탐색에 유리하다.  
+  RBT 는 좀 더 느슨히 균형을 유지 하기 때문에 삽입, 삭제에서 좀 더 유리하다.  
+  실제에서는 데이터의 삽입, 삭제가 빈번하기 때문에 RBT Tree 를 더 많이 사용한다.  
+    
+  ---
+      
+  **B Tree**  
+      
+  이진트리를 확장하여 더 많은 수의 자식을 가질 수 있게한 트리이다.  
+  자식 수를 늘린 것 뿐만 아니라 트리의 균형을 자동으로 맞춰주는 로직까지 갖췄기 때문에 
+    DB, 파일시스템에서 많이 사용된다.  
+      
+  **B+Tree**  
+      
+  B Tree 의 변형 구조로 Index 부분과 리프노트로 구성된 연결리스트로 이루어져있다.  
+  인덱스 부분의 키 값은 리프노드에 있는 키 값을 직접 찾아가는데 사용된다.  
+  탐색에 매우 유리하다.  
+  
   </div>
 </details>
-
+<details>
+  <summary>Hash Table</summary>
+  <br>
+  <div markdown="1">
+    
+  **Hash**  
+      
+  데이터를 효율적으로 관리하기 위해, 임의의 길이 데이터를 고정된 길이 데이터로 매핑하는 것이다.  
+  해시함수를 통해 얻은 해시 값을 키로, 데이터를 value 로 매핑한다.  
+    
+  ---  
+    
+  **Hash Function**  
+      
+  Hash Table 에서 키로 사용될 고유의 인덱스를 만들어내는 함수이다.  
+  해시 값을 반환한다.  
+  (Division Method(나눗셈), Digit Folding(아스키코드), Multiplication Method(실수), Universal Hashing(무작위 해쉬함수) 등이 있다.)  
+      
+  ---  
+    
+  **Hash Table**  
+      
+  key-value 쌍으로 데이터를 저장하는 자료구조이다.  
+  내부적으로 배열을 사용하여 데이터를 저장하기 때문에 빠른 검색속도를 제공한다.  
+  해시테이블은 각각의 키 값에 해시함수를 적용해 배열의 고유한 인덱스를 생성하고, 이 인덱스를 활용해 값을 저장하거나 검색한다.  
+  키 값을 통해 데이터를 탐색, 삽입, 삭제 함으로써 O(1) 에 수행 가능하다.  
+  실제 값이 저장되는 장소는 버킷 또는 슬롯이라 한다.  
+      
+  ---  
+    
+  **Collision(해시 충돌)**  
+    
+  서로 다른 데이터가 같은 인덱스로 해싱되어 충돌이 일어나는 상황  
+      
+  **해시 충돌 해결 방법**  
+      
+  **1.Open Addressing(개방주소법)**  
+      
+  해시 충돌이 발생하면 다른 해시 버킷에 해당 자료를 삽입하는 방식이다.  
+  이 때 다른 해시 버킷을 찾는 방법에는 선형 탐사, 제곱 탐사, 더블 해싱 등이 있다.  
+    
+    - 선형 탐사:  
+      순차적으로 비어 있는 버킷을 찾을 때 까지 탐색한다.  
+      
+    - 제곱 탐사 :  
+      2차 함수를 이용해 탐색한다.  
+      
+    - 더블 해싱 :  
+      2차 해시 함수를 통해 새로운 버킷을 탐색한다.
+    
+  **2.Separate Chaning(분리연결법)**  
+      
+  각각의 버킷들을 연결리스트로 만들어 충돌 발생 시 연결리스트에 노드를 추가하여 저장하는 방식이다.  
+      
+  **3.해시 버킷 동적 할당**  
+      
+  데이터의 갯수가 현재 해시 버킷 갯수의 75% 가 되면 2배로 해시 버킷의 사이즈를 키운다.  
+      
+  **개방주소법 vs 체이닝(분리연결법)**  
+      
+  일반적인 경우 체이닝이 더 빠르다.  
+  (개방주소법의 경우 해시 버킷의 밀도가 높은 경우 worst case 발생 빈도가 높아진다.)  
+    
+  개방주소법이 캐시 효율이 높다.  
+  데이터가 적은 경우 개방주소법이 더 효율적이다.  
+  (개방주소법은 연속적인 공간에 데이터를 저장하기 때문이다.)  
+    
+  ---  
+    
+  **HashMap vs HashTable**  
+      
+  둘 다 key-value 형식으로 데이터를 저장하는 자료구조이다.  
+  차이점은 동기화 지원 여부이다.  
+  HsahTable 은 synchronized 키워드를 통해 동기화를 지원한다.  
+  HashMap 은 동기화를 지원하지 않는다.  
+      
   
+  </div>
+</details>
+<details>
+  <br>
+  <summary>Graph</summary>
+  <div markdown="1">
+    
+  정보를 가지고 있는 노드와 노드 간의 연결된 간선의 정보로 이루어진 자료구조이다.  
+  계층적 구조를 나타내기에 적합하다.  
+  
+  </div>
+</details>
