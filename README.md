@@ -311,10 +311,163 @@ https://gyoogle.dev/blog/computer-language/Java/Thread.html
 <br>
 <div markdown="1">
 
+**에러** : 메모리 부족이나 스택오버플로우 같이 복구할 수 없는 심각한 오류이다.  
+비정상적으로 프로세스가 종료될 수 있다.  
+  
+**예외** : 발생하더라도 수습 가능한 비교적 덜 심각한 오류이다.  
+개발자가 별도의 처리를 통해 비정상적 종료를 막을 수 있다.  
+  
+자바에서는 에러와 예외 모두를 객체로 취급한다.  
+Throwable 클래스를 둘 다 상속한다.  
+	  
+**예외의 종류**  
+	  
+1.Checked Exception  
+	  
+Runtime Exception 을 제외한 모든 예외이다.  
+예외처리가 필수적이며, 처리하지 않을 경우 컴파일이 되지 않는다.  
+IOException, SQLException 등이 있다.  
+	  
+2.Unchecked Exception  
+	  
+Runtime Exception 하위의 모든 예외이다.  
+컴파일 시 체크되지 않고 런타임 시에 발생하는 예외이다.  
+	  
+
 https://gyoogle.dev/blog/computer-language/Java/Error%20&%20Exception.html
 </div>
 </details>
-# 인터뷰
+<details>
+	<sumamry>Garbage Collection</summary>
+	<br>
+	<div markdown="1">
+	
+	JVM 에 있는 Garbage Collector 가 더 이상 필요 없는 객체를 찾아 사용가능한 자원으로 회수 하는 것이다.  
+	GC 가 수행될 때 GC 를 수행하는 스레드 이외의 모든 스레드가 멈추게 되는데 이를 stop-the-world 라 한다.  
+	stop-the-world 의 시간을 단축시키는 것이 GC 성능 향상의 핵심이다.  
+		  
+	**Garbage Collectior 가설**  
+		  
+	1. 대부분의 객체는 금방 접근불가능 상태가 된다.  
+	2. old 객체가 young 객체를 참조하는 일은 드물다.  
+		  
+	**
+	    
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+<details>
+	<sumamry></summary>
+	<br>
+	<div markdown="1">
+	
+	
+	</div>
+</details>
+
+
+## 인터뷰
 
 ## 자바의 특징
 #### 1. 객체지향 언어
